@@ -102,38 +102,38 @@
     </header>
     <main>
       <section
-        class="about-me-container contrast-container section-container light-container"
+        class="about-me contrast-container section-container light-container"
         aria-label="about-me"
       >
-        <h2 class="heading section-heading contrast-heading about-me-heading">
-          About Me
-        </h2>
-        <p class="contrast-text about-text">
-          I am a <span class="attention">life-long learner</span>, forever
-          trying to deepen and broaden my understanding of the world of
-          technology.
-        </p>
-        <div class="skills-container">
-          <h3 class="skills-heading">Skills:</h3>
-          <ul class="skills-list">
-            <li class="skills-list-item">Java</li>
-            <li class="skills-list-item">JavaScript</li>
-            <li class="skills-list-item">Vue.js</li>
-            <li class="skills-list-item">PostgresSQL</li>
-            <li class="skills-list-item">Spring Boot</li>
-            <li class="skills-list-item">Semantic HTML</li>
-            <li class="skills-list-item">Responsive Web Design</li>
-            <li class="skills-list-item">CSS</li>
-          </ul>
-        </div>
-        <div class="passions-container">
-          <h3 class="passions-heading">Passions:</h3>
-          <ul class="passions-list">
-            <li class="passions-list-item">Accessibility</li>
-            <li class="passions-list-item">Place-holder</li>
-            <li class="passions-list-item">Place-holder</li>
-            <li class="passions-list-item">Place-holder</li>
-          </ul>
+        <div class="about-me-container sub-container">
+          <h2 class="heading about-me-heading">About Me</h2>
+          <p class="contrast-text about-text">
+            I am a <span class="attention">life-long learner</span>, forever
+            trying to deepen and broaden my understanding of the world of
+            technology.
+          </p>
+          <div class="skills-container">
+            <h3 class="skills-heading">Skills:</h3>
+            <ul class="skills-list">
+              <li class="skills-list-item">Java</li>
+              <li class="skills-list-item">JavaScript</li>
+              <li class="skills-list-item">Vue.js</li>
+              <li class="skills-list-item">PostgresSQL</li>
+              <li class="skills-list-item">Spring Boot</li>
+              <li class="skills-list-item">Semantic HTML</li>
+              <li class="skills-list-item">Responsive Web Design</li>
+              <li class="skills-list-item">CSS</li>
+            </ul>
+          </div>
+          <div class="passions-container">
+            <h3 class="passions-heading">Passions:</h3>
+            <ul class="passions-list">
+              <li class="passions-list-item">Accessibility</li>
+              <li class="passions-list-item">Place-holder</li>
+              <li class="passions-list-item">Place-holder</li>
+              <li class="passions-list-item">Place-holder</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -141,7 +141,7 @@
         class="projects section-container dark-container"
         aria-label="projects"
       >
-        <div class="projects-container">
+        <div class="projects-container sub-container">
           <h2 class="project-heading heading section-heading">Projects</h2>
           <div class="project-card">
             <div class="project-card_container">
@@ -213,9 +213,12 @@
           </div>
         </div>
       </section>
-      <section class="contact light-container" aria-label="contact">
-        <div class="contact-container">
-          <h2 class="contact-heading heading section-heading">Contact Me</h2>
+      <section
+        class="contact light-container section-container"
+        aria-label="contact"
+      >
+        <div class="contact-container sub-container">
+          <h2 class="contact-heading heading">Contact Me</h2>
           <div class="contact_icon-container">
             <img
               src="images/green-git.png"
@@ -228,33 +231,52 @@
               class="contact-icon"
             />
           </div>
-          <form action="" class="contact_form">
-            <div class="form-name_container">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div class="form-email_container">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="email" />
-            </div>
-            <div class="form-subject_container">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" id="subject" name="subject" />
-            </div>
-            <div class="form-message_container">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <input type="submit" />
-          </form>
+          <div class="form-container">
+            <form action="" class="contact_form">
+              <div class="form-name_container">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" />
+              </div>
+              <div class="form-email_container">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-subject_container">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-message_container">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="form-input"
+                ></textarea>
+              </div>
+              <input type="submit" class="form-button" />
+            </form>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer_text">
+        <span class="footer_year">&#169; 2024</span>
+        <span class="footer_name">Sarah Greer</span>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

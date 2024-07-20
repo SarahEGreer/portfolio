@@ -31,6 +31,7 @@ a{
 
 body{
     color: var(--clr-100);
+    background-color: #091D12;
 
     font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
@@ -56,7 +57,7 @@ textarea {
 
 .heading{
     font-family: "Rozha One", serif;
-    font-size: 2.5em;
+    font-size: 3.5rem;
     letter-spacing: .045em;
     line-height: .7;
     padding: 0;
@@ -72,6 +73,10 @@ textarea {
 
 /* container styles */
 
+.section-container{
+    padding: 3.5em 0;
+}
+
 .light-container{
     background-color: var(--clr-200);
     color:var(--clr-500);
@@ -82,8 +87,11 @@ textarea {
   
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    padding: 3em 0;
+}
+
+.sub-container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* header styles */
@@ -101,13 +109,11 @@ textarea {
    min-height: 100vh;
 }
 
+
 .nav-container{
     padding: .7em;
     margin-bottom: 1.2em;
     background-color: transparent;
-    /* background-color: var(--clr-300);
-    opacity: 0.8;
-    color:var(--clr-600); */
     justify-content:flex-end;
 }
 
@@ -148,7 +154,6 @@ button{
 
 /* intro-content */
 .introduction-container{
-    padding: 1.3rem 0;
     display: grid;
     justify-items: center; 
     grid-template-columns: 1fr;
@@ -158,6 +163,7 @@ button{
         "icons"
         "text";
     gap: 15px;
+    padding-bottom: 2rem;
 }
 
 .introduction_greeting{
@@ -170,7 +176,6 @@ button{
     grid-area: photo;
     width: 50%;
     margin-bottom: 10px;
-    /* max-width: 50%; */
 }
 
 .introduction_icon-img{
@@ -191,11 +196,7 @@ button{
     margin: 0;
 }
 
-/* main content */
-.section-container{
-    /* width: 75%; */
-    padding: 1em 0;
-}
+/************** main content ***************/
 
 .about-me-container{
     display: grid;
@@ -206,12 +207,8 @@ button{
     "about-text"
     "skills"
     "passions";
-    gap: 1.5em;
-
+    gap: 2rem;
     font-size: 1.5rem;
-    width: 80%;
-    margin: 0 auto;
-    padding: 5em 0;
 }
 
 .about-me-heading{
@@ -219,6 +216,7 @@ button{
     justify-self: flex-start;
     position: relative;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .about-me-heading::after{
@@ -264,25 +262,10 @@ button{
 
 /* project */
 
-/* .projects{
-
-    background: linear-gradient(90deg, #0A2B1A, #30605E);
-  
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-height: 100vh;
-   padding: 3em 0;
-} */
-
-.projects-container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 .project-heading{
     position: relative;
     max-width: 500px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1rem;
 }  
 
 
@@ -297,17 +280,25 @@ button{
     left: 0;
 }
 
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 0;
+}
+
+
 /* project card */
 
 .project-card{
-    margin: 0 auto 2.5em auto;
+    margin: 0 auto 0 auto;
     max-width: 400px;
     background-color: rgba(255, 253, 249, 0.15);
     border-radius: 1em;
 }
 
 .project-card_container{
-    margin: auto;
+    margin: 0 auto;
     padding: 2.5em 0;
     width: 80%;
     display: grid;
@@ -395,15 +386,10 @@ button{
 
 /* contact */
 
-.contact-container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 .contact-heading{
     position: relative;
     max-width: 500px;
-    margin-bottom: 1.5em;
+    margin-bottom: 4rem;
 }  
 
 
@@ -418,14 +404,82 @@ button{
     left: 0;
 }
 
+.contact_icon-container{
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}
+
 .contact-icon{
-    width: 2em;
+    width: 3em;
 }
 
 .form-label{
     display: block;
 }
 
+.form-container{
+    background-color: var(--clr-400);
+    border-radius: 1em;
+    padding: 1em 0;
+}
+
+.contact_form{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-label, 
+.form-input{
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-input{
+    width: 100%;
+    border: none;
+    min-height: 3em;
+    border-radius: 3px;
+    margin-bottom: 1.5em;
+}
+
+.form-label{
+    font-weight: 500;
+}
+
+
+.form-button{
+    width: 100%;
+    border: none;
+    padding: .4em;
+    font-weight: 600;
+    background: var(--clr-500);
+    color: var(--clr-100);
+    letter-spacing: .05em;
+    border-radius: 40px;
+    font-size: 1.3rem;
+}
+
+footer{
+ background: 
+    linear-gradient(45deg,
+    rgba(9, 48, 37, 0.95),
+    rgba(21, 66, 50, 0.75)),
+    url(images/jungle.png) no-repeat;
+    background-position: center;
+  
+   background-repeat: no-repeat;
+   background-size: cover;
+    padding: 1.2em;   
+}
+
+.footer_text{
+    display: flex;
+    max-width: fit-content;
+    margin: 0 auto;
+    gap: 1em;
+}
 
 @media(width <= 700px){
     .nav_menu_container{
@@ -453,3 +507,10 @@ button{
     }
 }
 
+@media (min-width: 800px){
+    .introduction-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "";
+    }
+}
