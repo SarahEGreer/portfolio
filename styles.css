@@ -38,17 +38,6 @@ body{
     line-height: 1.85;
     letter-spacing: .04em;
     font-weight: 300;
-
-    /* background: 
-    linear-gradient(45deg,
-    rgba(9, 48, 37, 0.95),
-    rgba(21, 66, 50, 0.75)),
-    url(images/jungle.png) no-repeat;
-    background-position: center;
-  
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-height: 100vh; */
 }
 
 textarea {
@@ -70,6 +59,20 @@ textarea {
 .flexbox{
     display:flex;
 }
+
+.form-button:hover, 
+.card_btn:hover,
+.form-button:focus,
+.card_btn:focus{
+    opacity: .8;
+}
+
+.form-button:active, 
+.card_btn:active,
+.introduction_icon-img:active{
+    transform:translateY(4px);
+}
+
 
 /* container styles */
 
@@ -109,6 +112,10 @@ textarea {
    min-height: 100vh;
 }
 
+.nav_menu_open_btn:hover,
+.nav_menu_close_btn:hover{
+    cursor: pointer;
+}
 
 .nav-container{
     padding: .7em;
@@ -479,6 +486,7 @@ button{
     border-radius: 3px;
     margin-bottom: 1.5em;
     font-size: 1.2rem;
+    padding: 8px;
 }
 
 .form-label{
@@ -496,6 +504,10 @@ button{
     letter-spacing: .05em;
     border-radius: 40px;
     font-size: 1.3rem;
+}
+
+.form-button:hover{
+    cursor: pointer;
 }
 
 footer{

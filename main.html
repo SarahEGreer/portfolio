@@ -73,7 +73,7 @@
             />
           </a>
           <a
-            href="www.linkedin.com/in/sarahgreerdeveloper"
+            href="https://www.linkedin.com/in/sarahgreerdeveloper"
             target="_blank"
             class="introduction_icon-img_link"
           >
@@ -83,7 +83,7 @@
               class="introduction_icon-img"
             />
           </a>
-          <a href="" class="introduction_icon-img_link">
+          <a href="#contact" class="introduction_icon-img_link">
             <img
               src="images/icon3.png"
               alt="Gmail icon"
@@ -153,7 +153,7 @@
           <div class="project-card">
             <div class="project-card_container">
               <img src="images/card1.png" alt="" class="card_img" />
-              <h3 class="card_title">Online Payment Service</h3>
+              <h3 class="card_title">Online Money Transfer</h3>
               <p class="card_description">
                 RESTfulAPI server and command-line application
               </p>
@@ -163,14 +163,17 @@
                 <span class="attention">Spring Boot</span>
               </p>
               <div class="projects_btn-container">
-                <a href="" class="card_btn code_btn">
+                <a
+                  href="https://github.com/SarahEGreer/bank-application"
+                  class="card_btn code_btn"
+                  target="_blank"
+                >
                   <img
                     src="images/git-icon.png"
                     alt="github icon"
                     class="button-icon"
                   /><span class="code-btn_text">View Code</span>
                 </a>
-                <a href="" class="card_btn live_btn">View Live Site</a>
               </div>
             </div>
           </div>
@@ -187,14 +190,17 @@
                 Technologies: <span class="attention">Java</span>
               </p>
               <div class="projects_btn-container">
-                <a href="" class="card_btn code_btn">
+                <a
+                  href="https://github.com/SarahEGreer/vending-machine"
+                  class="card_btn code_btn"
+                  target="_blank"
+                >
                   <img
                     src="images/git-icon.png"
                     alt="github icon"
                     class="button-icon"
                   /><span class="code-btn_text">View Code</span>
                 </a>
-                <a href="" class="card_btn live_btn">View Live Site</a>
               </div>
             </div>
           </div>
@@ -202,7 +208,7 @@
           <div class="project-card">
             <div class="project-card_container">
               <img src="images/card3.png" alt="" class="card_img" />
-              <h3 class="card_title">Vending Machine</h3>
+              <h3 class="card_title">Destination Generator</h3>
               <p class="card_description">
                 Website that generates travel destinations with travel
                 information and a flight link
@@ -213,14 +219,23 @@
                 <span class="attention">HTML</span>
               </p>
               <div class="projects_btn-container">
-                <a href="" class="card_btn code_btn">
+                <a
+                  href="https://github.com/SarahEGreer/travel-destination-generator"
+                  class="card_btn code_btn"
+                  target="_blank"
+                >
                   <img
                     src="images/git-icon.png"
                     alt="github icon"
                     class="button-icon"
                   /><span class="code-btn_text">View Code</span>
                 </a>
-                <a href="" class="card_btn live_btn">View Live Site</a>
+                <a
+                  href="https://travel-destination-generator.netlify.app/"
+                  class="card_btn live_btn"
+                  target="_blank"
+                  >View Live Site</a
+                >
               </div>
             </div>
           </div>
@@ -235,20 +250,28 @@
           <div class="contact_icon-heading-container">
             <h2 class="contact-heading heading">Contact Me</h2>
             <div class="contact_icon-container">
-              <img
-                src="images/green-git.png"
-                alt="github icon in green"
-                class="contact-icon"
-              />
-              <img
-                src="images/green-link.png"
-                alt="linkedIn icon in green"
-                class="contact-icon"
-              />
+              <a href="https://github.com/SarahEGreer" target="_blank">
+                <img
+                  src="images/green-git.png"
+                  alt="github icon in green"
+                  class="contact-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/sarahgreerdeveloper"
+                target="_blank"
+                ><img
+                  src="images/green-link.png"
+                  alt="linkedIn icon in green"
+                  class="contact-icon"
+              /></a>
             </div>
           </div>
           <div class="form-container">
-            <form action="" class="contact_form">
+            <form
+              action="https://formsubmit.co/95cc22add91ed3d644d68732c886af48"
+              method="POST"
+              class="contact_form"
+            >
               <div class="form-name_container">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" id="name" name="name" class="form-input" />
@@ -261,14 +284,15 @@
                     id="email"
                     name="email"
                     class="form-input"
+                    required
                   />
                 </div>
                 <div class="form-subject_container">
-                  <label for="subject" class="form-label">Subject</label>
+                  <label for="_subject" class="form-label">Subject</label>
                   <input
                     type="text"
-                    id="subject"
-                    name="subject"
+                    id="_subject"
+                    name="_subject"
                     class="form-input"
                   />
                 </div>
@@ -281,6 +305,7 @@
                   cols="30"
                   rows="10"
                   class="form-input"
+                  required
                 ></textarea>
               </div>
               <input type="submit" class="form-button" />
