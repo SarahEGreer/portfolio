@@ -15,7 +15,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header-container">
+    <header class="header-container" id="home">
       <div class="flexbox nav-container">
         <nav>
           <span id="nav-label" hidden>Navigation</span>
@@ -41,16 +41,16 @@
             </button>
             <ul class="nav_ul flexbox">
               <li class="nav_link_container">
-                <a href="" class="nav_link">Home</a>
+                <a href="#home" class="nav_link">Home</a>
               </li>
               <li class="nav_link_container">
-                <a href="" class="nav_link">About Me</a>
+                <a href="#about" class="nav_link">About Me</a>
               </li>
               <li class="nav_link_container">
-                <a href="" class="nav_link">Projects</a>
+                <a href="#projects" class="nav_link">Projects</a>
               </li>
               <li class="nav_link_container">
-                <a href="" class="nav_link">Contact Me</a>
+                <a href="#contact" class="nav_link">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -105,6 +105,7 @@
       <section
         class="about-me contrast-container section-container light-container"
         aria-label="about-me"
+        id="about"
       >
         <div class="about-me-container sub-container">
           <h2 class="heading about-me-heading">About Me</h2>
@@ -145,6 +146,7 @@
       <section
         class="projects section-container dark-container"
         aria-label="projects"
+        id="projects"
       >
         <div class="projects-container sub-container">
           <h2 class="project-heading heading section-heading">Projects</h2>
@@ -227,6 +229,7 @@
       <section
         class="contact light-container section-container"
         aria-label="contact"
+        id="contact"
       >
         <div class="contact-container sub-container">
           <div class="contact_icon-heading-container">
