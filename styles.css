@@ -196,6 +196,10 @@ button{
     margin: 0;
 }
 
+.icon-text{
+    display: none;
+}
+
 /************** main content ***************/
 
 .about-me-container{
@@ -246,6 +250,16 @@ button{
     grid-area: skills;
     background-color: var(--clr-400);
 }
+
+.skills-list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-list{
+    margin: 0;
+}
+
 
 .passions-container{
     grid-area: passions;
@@ -309,9 +323,16 @@ button{
     "ctitle"
     "cdescription"
     "ctech"
-    "clink"
-    "llink"
+    "links"
     ;
+    gap: 20px;
+}
+
+.projects_btn-container{
+    display: flex;
+    flex-direction: column;
+    grid-area: links;
+    width: 100%;
     gap: 20px;
 }
 
@@ -347,7 +368,6 @@ button{
 }
 
 .code_btn{
-    grid-area: clink;
     background-color:var(--clr-300);
 
     display: flex;
@@ -358,7 +378,6 @@ button{
 
 .live_btn{
     border: 1px solid white;
-    grid-area: llink;
     background-color: var(--clr-200);
 }
 
@@ -508,9 +527,113 @@ footer{
 }
 
 @media (min-width: 800px){
+    body{
+        font-size: 1.5rem;
+    }
+
+    .section-container{
+        min-height: 100vh;
+    }
+
+    .sub-container{
+        max-width:1100px;
+    }
+
+    /* introduction */
     .introduction-container{
+        margin: 0 auto;
+        width: 80%;
+        max-width: 1100px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "";
+        "greeting photo"
+        "text photo"
+        "icon-text icons";
+        padding: 2em 0;
+        justify-items: flex-start;
+        align-items:center;
     }
+
+    .icon-text{
+        font-weight: 100;
+        font-size: 1.7rem;
+        display: block;
+        grid-area: icon-text;
+        justify-self: end;
+        /* align-self: flex-end; */
+        margin-top: 4rem;
+    }
+
+    .introduction_icon-container{
+        align-self: flex-end;
+    }
+
+    .introduction_img{
+        width: 90%;
+        justify-self: flex-end;
+    }
+
+    .introduction_greeting{
+        text-align: left;
+        align-self: flex-end;
+        font-size: 3.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .introduction-text{
+        width: 100%;
+        align-self: flex-start;
+        font-size: 1.8rem;
+    }
+
+    /* about me */
+
+    .about-me-container{
+        max-width: 1100px;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "about-header about-header"
+        "about-text about-text"
+        "skills passions";
+    }
+
+    .about-text{
+        max-width: 700px;
+        justify-self:flex-start;
+    }
+
+    .skills-list-container{
+        flex-direction: row;
+    }
+
+    /* projects */
+    .project-card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .project-card_container{
+        text-align: left;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        "cimage ctitle"
+        "cimage cdescription"
+        "cimage ctech"
+        "cimage links";
+        gap: 20px 50px; 
+    }
+
+    .card_img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .card_title{
+        justify-self: flex-start;
+    }
+
+
+    /* .projects_btn-container{
+        flex-direction: row;
+    } */
+
 }
