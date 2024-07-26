@@ -15,48 +15,48 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header-container" id="home">
-      <div class="flexbox nav-container">
+    <header class="header_container" id="home">
+      <div class="nav_container">
         <nav>
-          <span id="nav-label" hidden>Navigation</span>
+          <span id="nav_label" hidden>Navigation</span>
           <button
             id="btnOpen"
-            class="nav_menu_open_btn"
+            class="nav_menu-open-btn"
             aria-expanded="false"
-            aria-labelledby="nav-label"
+            aria-labelledby="nav_label"
           >
-            <img src="images/bars-solid.svg" alt="" class="menu_open_icon" />
+            <img src="images/bars-solid.svg" alt="" class="menu_open-icon" />
           </button>
           <div
-            class="nav_menu_container"
+            class="nav_menu-container"
             role="dialog"
-            aria-labelledby="nav-label"
+            aria-labelledby="nav_label"
           >
-            <button id="btnClose" class="nav_menu_close_btn" aria-label="Close">
+            <button id="btnClose" class="nav_menu-close-btn" aria-label="Close">
               <img
-                class="menu_close_icon"
+                class="menu_close-icon"
                 src="images/xmark-solid.svg"
                 alt=""
               />
             </button>
-            <ul class="nav_ul flexbox">
-              <li class="nav_link_container">
+            <ul class="nav_ul">
+              <li class="nav_link-container">
                 <a href="#home" class="nav_link">Home</a>
               </li>
-              <li class="nav_link_container">
-                <a href="#about" class="nav_link">About Me</a>
+              <li class="nav_link-container">
+                <a href="#about" class="nav_link section-link">About Me</a>
               </li>
-              <li class="nav_link_container">
-                <a href="#projects" class="nav_link">Projects</a>
+              <li class="nav_link-container">
+                <a href="#projects" class="nav_link section-link">Projects</a>
               </li>
-              <li class="nav_link_container">
-                <a href="#contact" class="nav_link">Contact Me</a>
+              <li class="nav_link-container">
+                <a href="#contact" class="nav_link section-link">Contact Me</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <section class="introduction-container" aria-label="introduction">
+      <section class="introduction_container" aria-label="introduction">
         <h1 class="introduction_greeting heading">Hey there!</h1>
         <img src="images/profile-pic.png" alt="" class="introduction_img" />
         <span class="icon-text">Let's stay in touch:</span>
@@ -64,7 +64,7 @@
           <a
             href="https://github.com/SarahEGreer"
             target="_blank"
-            class="introduction_icon-img_link"
+            class="introduction_icon-img-link"
           >
             <img
               src="images/icon2.png"
@@ -75,7 +75,7 @@
           <a
             href="https://www.linkedin.com/in/sarahgreerdeveloper"
             target="_blank"
-            class="introduction_icon-img_link"
+            class="introduction_icon-img-link"
           >
             <img
               src="images/icon1.png"
@@ -83,7 +83,7 @@
               class="introduction_icon-img"
             />
           </a>
-          <a href="#contact" class="introduction_icon-img_link">
+          <a href="#contact" class="introduction_icon-img-link">
             <img
               src="images/icon3.png"
               alt="Gmail icon"
@@ -91,7 +91,7 @@
             />
           </a>
         </div>
-        <p class="introduction-text">
+        <p class="introduction_text">
           I’m Sarah, a
           <span class="attention">full stack software developer.</span> My
           passion is making the world more
@@ -107,37 +107,37 @@
         aria-label="about-me"
         id="about"
       >
-        <div class="about-me-container sub-container">
-          <h2 class="heading about-me-heading">About Me</h2>
-          <p class="contrast-text about-text">
+        <div class="about-me_container sub-container">
+          <h2 class="heading about-me_heading">About Me</h2>
+          <p class="contrast-text about-me_text">
             I am a <span class="attention">life-long learner</span>, forever
             trying to deepen and broaden my understanding of the world of
             technology.
           </p>
-          <div class="skills-container">
-            <h3 class="skills-heading">Skills:</h3>
-            <div class="skills-list-container">
-              <ul class="skills-list">
-                <li class="skills-list-item">Java</li>
-                <li class="skills-list-item">JavaScript</li>
-                <li class="skills-list-item">Vue.js</li>
-                <li class="skills-list-item">PostgresSQL</li>
-                <li class="skills-list-item">Spring Boot</li>
+          <div class="skills_container">
+            <h3 class="skills_heading">Skills:</h3>
+            <div class="skills_list-container">
+              <ul class="skills_list">
+                <li class="skills_list-item">Java</li>
+                <li class="skills_list-item">JavaScript</li>
+                <li class="skills_list-item">Vue.js</li>
+                <li class="skills_list-item">PostgresSQL</li>
+                <li class="skills_list-item">Spring Boot</li>
               </ul>
-              <ul class="skills-list list-two">
-                <li class="skills-list-item">Semantic HTML</li>
-                <li class="skills-list-item">Responsive Web Design</li>
-                <li class="skills-list-item">CSS</li>
+              <ul class="skills_list list-two">
+                <li class="skills_list-item">Semantic HTML</li>
+                <li class="skills_list-item">Responsive Web Design</li>
+                <li class="skills_list-item">CSS</li>
               </ul>
             </div>
           </div>
-          <div class="passions-container">
-            <h3 class="passions-heading">Passions:</h3>
-            <ul class="passions-list">
-              <li class="passions-list-item">Accessibility</li>
-              <li class="passions-list-item">Place-holder</li>
-              <li class="passions-list-item">Place-holder</li>
-              <li class="passions-list-item">Place-holder</li>
+          <div class="passions_container">
+            <h3 class="passions_heading">Passions:</h3>
+            <ul class="passions_list">
+              <li class="passions_list-item">Accessibility</li>
+              <li class="passions_list-item">Place-holder</li>
+              <li class="passions_list-item">Place-holder</li>
+              <li class="passions_list-item">Place-holder</li>
             </ul>
           </div>
         </div>
@@ -148,10 +148,10 @@
         aria-label="projects"
         id="projects"
       >
-        <div class="projects-container sub-container">
-          <h2 class="project-heading heading section-heading">Projects</h2>
-          <div class="project-card">
-            <div class="project-card_container">
+        <div class="projects_container sub-container">
+          <h2 class="project_heading heading section-heading">Projects</h2>
+          <div class="project_card">
+            <div class="project_card-container">
               <img src="images/card1.png" alt="" class="card_img" />
               <h3 class="card_title">Online Money Transfer</h3>
               <p class="card_description">
@@ -165,7 +165,7 @@
               <div class="projects_btn-container">
                 <a
                   href="https://github.com/SarahEGreer/bank-application"
-                  class="card_btn code_btn"
+                  class="card-btn code-btn"
                   target="_blank"
                 >
                   <img
@@ -178,8 +178,8 @@
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-card_container">
+          <div class="project_card">
+            <div class="project_card-container">
               <img src="images/card2.png" alt="" class="card_img" />
               <h3 class="card_title">Vending Machine</h3>
               <p class="card_description">
@@ -192,7 +192,7 @@
               <div class="projects_btn-container">
                 <a
                   href="https://github.com/SarahEGreer/vending-machine"
-                  class="card_btn code_btn"
+                  class="card-btn code-btn"
                   target="_blank"
                 >
                   <img
@@ -205,8 +205,8 @@
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-card_container">
+          <div class="project_card">
+            <div class="project_card-container">
               <img src="images/card3.png" alt="" class="card_img" />
               <h3 class="card_title">Destination Generator</h3>
               <p class="card_description">
@@ -221,7 +221,7 @@
               <div class="projects_btn-container">
                 <a
                   href="https://github.com/SarahEGreer/travel-destination-generator"
-                  class="card_btn code_btn"
+                  class="card-btn code-btn"
                   target="_blank"
                 >
                   <img
@@ -232,7 +232,7 @@
                 </a>
                 <a
                   href="https://travel-destination-generator.netlify.app/"
-                  class="card_btn live_btn"
+                  class="card-btn live-btn"
                   target="_blank"
                   >View Live Site</a
                 >
@@ -246,15 +246,15 @@
         aria-label="contact"
         id="contact"
       >
-        <div class="contact-container sub-container">
+        <div class="contact_container sub-container">
           <div class="contact_icon-heading-container">
-            <h2 class="contact-heading heading">Contact Me</h2>
+            <h2 class="contact_heading heading">Contact Me</h2>
             <div class="contact_icon-container">
               <a href="https://github.com/SarahEGreer" target="_blank">
                 <img
                   src="images/green-git.png"
                   alt="github icon in green"
-                  class="contact-icon"
+                  class="contact_icon"
               /></a>
               <a
                 href="https://www.linkedin.com/in/sarahgreerdeveloper"
@@ -262,53 +262,53 @@
                 ><img
                   src="images/green-link.png"
                   alt="linkedIn icon in green"
-                  class="contact-icon"
+                  class="contact_icon"
               /></a>
             </div>
           </div>
-          <div class="form-container">
+          <div class="form_container">
             <form
               action="https://formsubmit.co/95cc22add91ed3d644d68732c886af48"
               method="POST"
-              class="contact_form"
+              class="contact-form"
             >
-              <div class="form-name_container">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input" />
+              <div class="form_name-container">
+                <label for="name" class="form_label">Name</label>
+                <input type="text" id="name" name="name" class="form_input" />
               </div>
               <div class="form_flex-container">
-                <div class="form-email_container">
-                  <label for="email" class="form-label">Email</label>
+                <div class="form_email-container">
+                  <label for="email" class="form_label">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    class="form-input"
+                    class="form_input"
                     required
                   />
                 </div>
-                <div class="form-subject_container">
-                  <label for="_subject" class="form-label">Subject</label>
+                <div class="form_subject-container">
+                  <label for="_subject" class="form_label">Subject</label>
                   <input
                     type="text"
                     id="_subject"
                     name="_subject"
-                    class="form-input"
+                    class="form_input"
                   />
                 </div>
               </div>
-              <div class="form-message_container">
-                <label for="message" class="form-label">Message</label>
+              <div class="form_message-container">
+                <label for="message" class="form_label">Message</label>
                 <textarea
                   name="message"
                   id="message"
                   cols="30"
                   rows="10"
-                  class="form-input"
+                  class="form_input"
                   required
                 ></textarea>
               </div>
-              <input type="submit" class="form-button" />
+              <input type="submit" class="form_button" />
             </form>
           </div>
         </div>
