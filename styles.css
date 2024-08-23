@@ -161,6 +161,10 @@ ul.nav_ul{
     list-style: none;
 }
 
+.nav_link:hover{
+    border-bottom: 1px white solid;
+}
+
 .nav_menu-close-btn{
     display: block;
     margin-inline-start: auto;
@@ -571,19 +575,30 @@ footer{
     gap: 1em;
 }
 
-.footer_sub-attributions{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid purple;
-}
+
 
 .attribution_container{
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
-    
+    flex-wrap: wrap;
+    font-size: .75rem;   
+   
 }
 
+.attribution_text {
+    margin: 0 5px;
+  }
+
+.attribution_title{
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.attribution_break{
+    margin: .75rem 0 1rem;
+}
 
 @media(max-width: 800px){
     .nav_menu-container{

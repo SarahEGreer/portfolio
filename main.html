@@ -1,501 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css style sheet -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header class="header_container" id="home">
-      <div class="nav_container">
-        <nav>
-          <span id="nav_label" hidden>Navigation</span>
-          <button
-            id="btnOpen"
-            class="nav_menu-open-btn"
-            aria-expanded="false"
-            aria-labelledby="nav_label"
-          >
-            <img src="images/bars-solid.svg" alt="" class="menu_open-icon" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap"
+    rel="stylesheet" />
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="header_container" id="home">
+    <div class="nav_container">
+      <nav>
+        <span id="nav_label" hidden>Navigation</span>
+        <button id="btnOpen" class="nav_menu-open-btn" aria-expanded="false" aria-labelledby="nav_label">
+          <img src="images/bars-solid.svg" alt="hamburger menu icon" class="menu_open-icon" />
+        </button>
+        <div class="nav_menu-container" role="dialog" aria-labelledby="nav_label">
+          <button id="btnClose" class="nav_menu-close-btn" aria-label="Close">
+            <img class="menu_close-icon" src="images/xmark-solid.svg" alt="close menu icon" />
           </button>
-          <div
-            class="nav_menu-container"
-            role="dialog"
-            aria-labelledby="nav_label"
-          >
-            <button id="btnClose" class="nav_menu-close-btn" aria-label="Close">
-              <img
-                class="menu_close-icon"
-                src="images/xmark-solid.svg"
-                alt=""
-              />
-            </button>
-            <ul class="nav_ul">
-              <li class="nav_link-container">
-                <a href="#home" class="nav_link">Home</a>
-              </li>
-              <li class="nav_link-container">
-                <a href="#about" class="nav_link section-link">About Me</a>
-              </li>
-              <li class="nav_link-container">
-                <a href="#projects" class="nav_link section-link">Projects</a>
-              </li>
-              <li class="nav_link-container">
-                <a href="#contact" class="nav_link section-link">Contact Me</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <section class="introduction_container" aria-label="introduction">
-        <h1 class="introduction_greeting heading">Hey there!</h1>
-        <img src="images/profile-pic.png" alt="" class="introduction_img" />
-        <!-- <span class="icon-text">Let's stay in touch:</span> -->
-        <div class="introduction_icon-container">
-          <span class="icon-text">Let's stay in touch:</span>
-          <a
-            href="https://github.com/SarahEGreer"
-            target="_blank"
-            class="introduction_icon-img-link"
-          >
-            <img
-              src="images/icon2.png"
-              alt="Github icon"
-              class="introduction_icon-img"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sarahgreerdeveloper"
-            target="_blank"
-            class="introduction_icon-img-link"
-          >
-            <img
-              src="images/icon1.png"
-              alt="LinkedIn icon"
-              class="introduction_icon-img"
-            />
-          </a>
-          <a href="#contact" class="introduction_icon-img-link">
-            <img
-              src="images/icon3.png"
-              alt="Gmail icon"
-              class="introduction_icon-img"
-            />
-          </a>
+          <ul class="nav_ul">
+            <li class="nav_link-container">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_link-container">
+              <a href="#about" class="nav_link section-link">About Me</a>
+            </li>
+            <li class="nav_link-container">
+              <a href="#projects" class="nav_link section-link">Projects</a>
+            </li>
+            <li class="nav_link-container">
+              <a href="#contact" class="nav_link section-link">Contact Me</a>
+            </li>
+          </ul>
         </div>
-        <p class="introduction_text">
-          I’m Sarah, a
-          <span class="attention">full stack software developer.</span> My
-          passion is making the world more
-          <span class="attention">efficient</span> and
-          <span class="attention">user-friendly</span>, one line of code at a
-          time.
+      </nav>
+    </div>
+    <section class="introduction_container" aria-label="introduction">
+      <h1 class="introduction_greeting heading">Hey there!</h1>
+      <img src="images/profile-pic.png" alt="picture of Sarah smiling" class="introduction_img" />
+      <div class="introduction_icon-container">
+        <span class="icon-text">Let's stay in touch:</span>
+        <a href="https://github.com/SarahEGreer" target="_blank" class="introduction_icon-img-link">
+          <img src="images/icon2.png" alt="Github icon" class="introduction_icon-img" />
+        </a>
+        <a href="https://www.linkedin.com/in/sarahgreerdeveloper" target="_blank" class="introduction_icon-img-link">
+          <img src="images/icon1.png" alt="LinkedIn icon" class="introduction_icon-img" />
+        </a>
+        <a href="#contact" class="introduction_icon-img-link">
+          <img src="images/icon3.png" alt="Gmail icon" class="introduction_icon-img" />
+        </a>
+      </div>
+      <p class="introduction_text">
+        I’m Sarah, a
+        <span class="attention">full stack software developer.</span> My
+        passion is making the world more
+        <span class="attention">efficient</span> and
+        <span class="attention">user-friendly</span>, one line of code at a
+        time.
+      </p>
+    </section>
+  </header>
+  <main>
+    <section class="about-me contrast-container section-container light-container" aria-label="about-me" id="about">
+      <div class="about-me_container sub-container">
+        <h2 class="heading about-me_heading">About Me</h2>
+        <p class="contrast-text about-me_text">
+          I am a <span class="attention">life-long learner</span>, forever
+          trying to deepen and broaden my understanding of the world of
+          technology.
         </p>
-      </section>
-    </header>
-    <main>
-      <section
-        class="about-me contrast-container section-container light-container"
-        aria-label="about-me"
-        id="about"
-      >
-        <div class="about-me_container sub-container">
-          <h2 class="heading about-me_heading">About Me</h2>
-          <p class="contrast-text about-me_text">
-            I am a <span class="attention">life-long learner</span>, forever
-            trying to deepen and broaden my understanding of the world of
-            technology.
-          </p>
-          <div class="skills_container">
-            <div class="skills_sub-container">
-              <h3 class="skills_heading">Skills:</h3>
-              <div class="skills_list-container">
-                <div class="skills_list">
-                  <div class="skills_list-item">
-                    <img
-                      src="images/java-svg.svg"
-                      alt="java icon"
-                      class="skills-icon"
-                    />
-                    <span>Java</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/js-svg.svg"
-                      alt="JavaScript icon"
-                      class="skills-icon"
-                    />
-                    <span>JavaScript</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/vue-svg.svg"
-                      alt="VueJS icon"
-                      class="skills-icon"
-                    />
-                    <span>Vue.js</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/postgres-svg.svg"
-                      alt="PostgreSql icon"
-                      class="skills-icon"
-                    />
-                    <span>PostgreSQL</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/spring-boot-svg.svg"
-                      alt="spring boot icon"
-                      class="skills-icon"
-                    />
-                    <span>Spring Boot</span>
-                  </div>
+        <div class="skills_container">
+          <div class="skills_sub-container">
+            <h3 class="skills_heading">Skills:</h3>
+            <div class="skills_list-container">
+              <div class="skills_list">
+                <div class="skills_list-item">
+                  <img src="images/java-svg.svg" alt="java icon" class="skills-icon" />
+                  <span>Java</span>
                 </div>
-                <div class="skills_list list-two">
-                  <div class="skills_list-item">
-                    <img
-                      src="images/html-svg.svg"
-                      alt="html logo"
-                      class="skills-icon"
-                    />
-                    <span>Semantic HTML</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/responsive-png.png"
-                      alt="responsive web design icon"
-                      class="skills-icon"
-                    />
-                    <span>Responsive Web Design</span>
-                  </div>
-                  <div class="skills_list-item">
-                    <img
-                      src="images/css-svg.svg"
-                      alt="CSS icon"
-                      class="skills-icon"
-                    />
-                    <span>CSS</span>
-                  </div>
+                <div class="skills_list-item">
+                  <img src="images/js-svg.svg" alt="JavaScript icon" class="skills-icon" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="skills_list-item">
+                  <img src="images/vue-svg.svg" alt="VueJS icon" class="skills-icon" />
+                  <span>Vue.js</span>
+                </div>
+                <div class="skills_list-item">
+                  <img src="images/postgres-svg.svg" alt="PostgreSql icon" class="skills-icon" />
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skills_list-item">
+                  <img src="images/spring-boot-svg.svg" alt="spring boot icon" class="skills-icon" />
+                  <span>Spring Boot</span>
+                </div>
+              </div>
+              <div class="skills_list list-two">
+                <div class="skills_list-item">
+                  <img src="images/html-svg.svg" alt="html logo" class="skills-icon" />
+                  <span>Semantic HTML</span>
+                </div>
+                <div class="skills_list-item">
+                  <img src="images/responsive-png.png" alt="responsive web design icon" class="skills-icon" />
+                  <span>Responsive Web Design</span>
+                </div>
+                <div class="skills_list-item">
+                  <img src="images/css-svg.svg" alt="CSS icon" class="skills-icon" />
+                  <span>CSS</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="passions_container">
-            <div class="passions_sub-container">
+        </div>
+        <div class="passions_container">
+          <div class="passions_sub-container">
             <h3 class="passions_heading">Passions:</h3>
 
             <div class="passions_list">
               <div class="passions_list-item">
-                <img
-                  src="images/accessibility-png.png"
-                  alt="Accessibility Icon"
-                  class="passions-icon"
-                />
+                <img src="images/accessibility-png.png" alt="Accessibility Icon" class="passions-icon" />
                 <span>Accessibility</span>
               </div>
               <div class="passions_list-item">
-                <img
-                  src="images/language-learning-png.png"
-                  alt="language learning icon"
-                  class="passions-icon"
-                />
+                <img src="images/language-learning-png.png" alt="language learning icon" class="passions-icon" />
                 <span>Language Learning</span>
               </div>
               <div class="passions_list-item">
-                <img
-                  src="images/sustainability-png.png"
-                  alt="sustainability icon"
-                  class="passions-icon"
-                />
+                <img src="images/sustainability-png.png" alt="sustainability icon" class="passions-icon" />
                 <span>Sustainability</span>
               </div>
               <div class="passions_list-item">
-                <img
-                  src="images/knit-icon.png"
-                  alt="knitting icon"
-                  class="passions-icon"
-                />
+                <img src="images/knit-icon.png" alt="knitting icon" class="passions-icon" />
                 <span>Arts & Crafts</span>
               </div>
               <div class="passions_list-item">
-                <img
-                  src="images/hike-icon.png"
-                  alt="hiking icon"
-                  class="passions-icon"
-                />
+                <img src="images/hike-icon.png" alt="hiking icon" class="passions-icon" />
                 <span>Hiking</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <section
-        class="projects section-container dark-container"
-        aria-label="projects"
-        id="projects"
-      >
-        <div class="projects_container sub-container">
-          <h2 class="project_heading heading section-heading">Projects</h2>
+    <section class="projects section-container dark-container" aria-label="projects" id="projects">
+      <div class="projects_container sub-container">
+        <h2 class="project_heading heading section-heading">Projects</h2>
 
-          <div class="project_card">
-            <div class="project_card-container">
-              <img src="images/decuisine-card.png" alt="" class="card_img" />
-              <h3 class="card_title">De Cuisine: Meal Planner</h3>
-              <p class="card_description">
-                Full-stack meal planning application, featuring meal plan
-                creation, recipe management, grocery list integration, and
-                visual tracking with FullCalendar.io.
-              </p>
-              <p class="card_technologies">
-                Technologies: <span class="attention">Java</span>,
-                <span class="attention">Vue JS</span>,
-                <span class="attention">PostgresSQL</span>, &
-                <span class="attention">Spring Boot</span>
-              </p>
-              <p class="card_note">
-                *Mobile site coming soon! Please view on larger screen sizes
-              </p>
-              <div class="projects_btn-container">
-                <a
-                  href="https://github.com/SarahEGreer/bank-application"
-                  class="card-btn code-btn"
-                  target="_blank"
-                >
-                  <img
-                    src="images/git-icon.png"
-                    alt="github icon"
-                    class="button-icon"
-                  /><span class="code-btn_text">View Code</span>
-                </a>
-                <a
-                  href="https://travel-destination-generator.netlify.app/"
-                  class="card-btn live-btn"
-                  target="_blank"
-                  >View Live Site</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <div class="project_card-container">
-              <img src="images/card1.png" alt="" class="card_img" />
-              <h3 class="card_title">Online Money Transfer</h3>
-              <p class="card_description">
-                RESTful API server and command-line application for an online
-                payment service, featuring user authentication, account
-                management, and money transfers.
-              </p>
-              <p class="card_technologies">
-                Technologies: <span class="attention">Java</span>,
-                <span class="attention">PostgresSQL</span>, &
-                <span class="attention">Spring Boot</span>
-              </p>
-              <p class="card_note">
-                *Code available on request due to academic integrity rules
-              </p>
-              <div class="projects_btn-container">
-                <a href="#contact" class="card-btn code-btn" target="_blank">
-                  <span class="code-btn_text">Request Code</span>
-                </a>
-                <a
-                  href="https://travel-destination-generator.netlify.app/"
-                  class="card-btn live-btn"
-                  target="_blank"
-                  >Application Video</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <div class="project_card-container">
-              <img src="images/card2.png" alt="" class="card_img" />
-              <h3 class="card_title">Vending Machine</h3>
-              <p class="card_description">
-                CLI program for vending machine software built with, featuring
-                inventory display, purchase processing, and transaction logging,
-                with unit tests for validation.
-              </p>
-              <p class="card_technologies">
-                Technologies: <span class="attention">Java</span>
-              </p>
-              <p class="card_note">
-                *Code available on request due to academic integrity rules
-              </p>
-              <div class="projects_btn-container">
-                <a
-                  href="https://github.com/SarahEGreer/vending-machine"
-                  class="card-btn code-btn"
-                  target="_blank"
-                >
-                  <span class="code-btn_text">View Code</span>
-                </a>
-                <a
-                  href="https://travel-destination-generator.netlify.app/"
-                  class="card-btn live-btn"
-                  target="_blank"
-                  >Application Video</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <div class="project_card-container">
-              <img src="images/card3.png" alt="" class="card_img" />
-              <h3 class="card_title">Destination Generator</h3>
-              <p class="card_description">
-                Responsively designed web application which randomly generates
-                travel destinations with descriptions and links to flights,
-                featuring a landing page, 15 destinations, a loading screen with
-                messages and animations.
-              </p>
-              <p class="card_technologies">
-                Technologies: <span class="attention">JavaScript</span>,
-                <span class="attention">CSS</span>,
-                <span class="attention">HTML</span>
-              </p>
-              <p class="card_note">*Full-stack application coming soon!</p>
-              <div class="projects_btn-container">
-                <a
-                  href="https://github.com/SarahEGreer/travel-destination-generator"
-                  class="card-btn code-btn"
-                  target="_blank"
-                >
-                  <img
-                    src="images/git-icon.png"
-                    alt="github icon"
-                    class="button-icon"
-                  /><span class="code-btn_text">View Code</span>
-                </a>
-                <a
-                  href="https://travel-destination-generator.netlify.app/"
-                  class="card-btn live-btn"
-                  target="_blank"
-                  >View Live Site</a
-                >
-              </div>
+        <div class="project_card">
+          <div class="project_card-container">
+            <img src="images/decuisine-card.png" alt="screenshot of De Cuisine website" class="card_img" />
+            <h3 class="card_title">De Cuisine: Meal Planner</h3>
+            <p class="card_description">
+              Full-stack meal planning application, featuring meal plan
+              creation, recipe management, grocery list integration, and
+              visual tracking with FullCalendar.io.
+            </p>
+            <p class="card_technologies">
+              Technologies: <span class="attention">Java</span>,
+              <span class="attention">Vue JS</span>,
+              <span class="attention">PostgresSQL</span>, &
+              <span class="attention">Spring Boot</span>
+            </p>
+            <p class="card_note">
+              *Mobile site coming soon! Please view on larger screen sizes
+            </p>
+            <div class="projects_btn-container">
+              <a href="https://github.com/SarahEGreer/DeCuisine" class="card-btn code-btn" target="_blank">
+                <img src="images/git-icon.png" alt="github icon" class="button-icon" /><span class="code-btn_text">View
+                  Code</span>
+              </a>
+              <a href="https://www.loom.com/share/59d099d8957f4fe88038c249d86227c2?sid=f97ce9ea-7f17-4873-a2d0-d2fa2e98c91f"
+                class="card-btn live-btn" target="_blank">View
+                Live Site</a>
             </div>
           </div>
         </div>
-      </section>
-      <section
-        class="contact light-container section-container"
-        aria-label="contact"
-        id="contact"
-      >
-        <div class="contact_container sub-container">
-          <div class="contact_icon-heading-container">
-            <h2 class="contact_heading heading">Contact Me</h2>
-            <div class="contact_icon-container">
-              <a href="https://github.com/SarahEGreer" target="_blank">
-                <img
-                  src="images/green-git.png"
-                  alt="github icon in green"
-                  class="contact_icon"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/sarahgreerdeveloper"
-                target="_blank"
-                ><img
-                  src="images/green-link.png"
-                  alt="linkedIn icon in green"
-                  class="contact_icon"
-              /></a>
+
+        <div class="project_card">
+          <div class="project_card-container">
+            <img src="images/card1.png" alt="Screenshot of money transfer CLI menus" class="card_img" />
+            <h3 class="card_title">Online Money Transfer</h3>
+            <p class="card_description">
+              RESTful API server and command-line application for an online
+              payment service, featuring user authentication, account
+              management, and money transfers.
+            </p>
+            <p class="card_technologies">
+              Technologies: <span class="attention">Java</span>,
+              <span class="attention">PostgresSQL</span>, &
+              <span class="attention">Spring Boot</span>
+            </p>
+            <p class="card_note">
+              *Code available on request due to academic integrity rules
+            </p>
+            <div class="projects_btn-container">
+              <a href="#contact" class="card-btn code-btn" target="_blank">
+                <span class="code-btn_text">Request Code</span>
+              </a>
+              <a href="https://www.loom.com/share/50b0452b704344d4a34413fe4b5e4f75?sid=284b0e29-ec34-44b7-b7b2-099d6b95d644"
+                class="card-btn live-btn" target="_blank">Application Video</a>
             </div>
           </div>
+        </div>
 
-          <div class="form_container">
-            <form
-              action="https://submit-form.com/3m4H1SJZT"
-              method="POST"
-              class="contact-form"
-            >
-              <div class="form_name-container">
-                <label for="name" class="form_label">Name</label>
-                <input type="text" id="name" name="name" class="form_input" />
-              </div>
-              <div class="form_flex-container">
-                <div class="form_email-container">
-                  <label for="email" class="form_label">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form_input"
-                    required
-                  />
-                </div>
-                <div class="form_subject-container">
-                  <label for="subject" class="form_label">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    class="form_input"
-                  />
-                </div>
-              </div>
-              <div class="form_message-container">
-                <label for="message" class="form_label">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  class="form_input"
-                  required
-                ></textarea>
-              </div>
-              <input type="submit" class="form_button" />
-            </form>
+        <div class="project_card">
+          <div class="project_card-container">
+            <img src="images/card2.png" alt="Screenshot of Vending machine CLI menus" class="card_img" />
+            <h3 class="card_title">Vending Machine</h3>
+            <p class="card_description">
+              CLI program for vending machine software built with, featuring
+              inventory display, purchase processing, and transaction logging,
+              with unit tests for validation.
+            </p>
+            <p class="card_technologies">
+              Technologies: <span class="attention">Java</span>
+            </p>
+            <p class="card_note">
+              *Code available on request due to academic integrity rules
+            </p>
+            <div class="projects_btn-container">
+              <a href="https://github.com/SarahEGreer/vending-machine" class="card-btn code-btn" target="_blank">
+                <span class="code-btn_text">View Code</span>
+              </a>
+              <a href="https://www.loom.com/share/d0877b241d9440cebd6860b0ffd80d39?sid=d4fc5e96-73bb-47eb-8f7e-62f3c3148a00"
+                class="card-btn live-btn" target="_blank">Application Video</a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_text">
-        <span class="footer_year">&#169; 2024</span>
-        <span class="footer_name">Sarah Greer</span>
+
+        <div class="project_card">
+          <div class="project_card-container">
+            <img src="images/card3.png" alt="Sceenshot of generator opening screen" class="card_img" />
+            <h3 class="card_title">Destination Generator</h3>
+            <p class="card_description">
+              Responsively designed web application which randomly generates
+              travel destinations with descriptions and links to flights,
+              featuring a landing page, 15 destinations, a loading screen with
+              messages and animations.
+            </p>
+            <p class="card_technologies">
+              Technologies: <span class="attention">JavaScript</span>,
+              <span class="attention">CSS</span>,
+              <span class="attention">HTML</span>
+            </p>
+            <p class="card_note">*Full-stack application coming soon!</p>
+            <div class="projects_btn-container">
+              <a href="https://github.com/SarahEGreer/travel-destination-generator" class="card-btn code-btn"
+                target="_blank">
+                <img src="images/git-icon.png" alt="github icon" class="button-icon" /><span class="code-btn_text">View
+                  Code</span>
+              </a>
+              <a href="https://travel-destination-generator.netlify.app/" class="card-btn live-btn" target="_blank">View
+                Live Site</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="attribution_container">
-      <div class="footer_attributions">
-        <div class="footer_sub-attributions">
-        <a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/90519/spring-boot">Spring Boot</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/rY6agKizO9eb/vue-js">Vue Js</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/38561/postgresql">PostgreSQL</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </section>
+    <section class="contact light-container section-container" aria-label="contact" id="contact">
+      <div class="contact_container sub-container">
+        <div class="contact_icon-heading-container">
+          <h2 class="contact_heading heading">Contact Me</h2>
+          <div class="contact_icon-container">
+            <a href="https://github.com/SarahEGreer" target="_blank">
+              <img src="images/green-git.png" alt="github icon in green" class="contact_icon" /></a>
+            <a href="https://www.linkedin.com/in/sarahgreerdeveloper" target="_blank"><img src="images/green-link.png"
+                alt="linkedIn icon in green" class="contact_icon" /></a>
+          </div>
+        </div>
+
+        <div class="form_container">
+          <form action="https://submit-form.com/3m4H1SJZT" method="POST" class="contact-form">
+            <div class="form_name-container">
+              <label for="name" class="form_label">Name</label>
+              <input type="text" id="name" name="name" class="form_input" />
+            </div>
+            <div class="form_flex-container">
+              <div class="form_email-container">
+                <label for="email" class="form_label">Email</label>
+                <input type="email" id="email" name="email" class="form_input" required />
+              </div>
+              <div class="form_subject-container">
+                <label for="subject" class="form_label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form_input" />
+              </div>
+            </div>
+            <div class="form_message-container">
+              <label for="message" class="form_label">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" class="form_input" required></textarea>
+            </div>
+            <input type="submit" class="form_button" />
+          </form>
+        </div>
       </div>
-      <div class="footer_sub-attributions">
-        <a target="_blank" href="https://icons8.com/icon/108784/javascript">JavaScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/v8RpPQUwv0N8/html-5">HTML</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/32313/responsive">Responsive</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/21278/css3">CSS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/63223/web-accessibility">Accessibility</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      </div>
-      <div class="footer_sub-attributions">
-        <a target="_blank" href="https://icons8.com/icon/3ZVHr47ogpJp/language">Language</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/ivmdsGweuTzU/sustainable">Sustainable</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/JgmYoiWioz8k/knit">Knit</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/37691/trekking">Hiking</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_text">
+      <span class="footer_year">&#169; 2024</span>
+      <span class="footer_name">Sarah Greer</span>
+    </div>
+    <hr class="attribution_break">
+    <h4 class="attribution_title">Icon Attributions: </h4>
+    <div class="attribution_container">
+
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/13679/java">Java</a> icon by <a
+          target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/90519/spring-boot">Spring
+          Boot</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/rY6agKizO9eb/vue-js">Vue Js</a>
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/38561/postgresql">PostgreSQL</a>
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/108784/javascript">JavaScript</a>
+        icon
+        by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"> <a target="_blank" href="https://icons8.com/icon/v8RpPQUwv0N8/html-5">HTML</a>
+        icon by
+        <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"> <a target="_blank" href="https://icons8.com/icon/32313/responsive">Responsive</a>
+        icon
+        by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"> <a target="_blank" href="https://icons8.com/icon/21278/css3">CSS</a> icon by <a
+          target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"> <a target="_blank"
+          href="https://icons8.com/icon/63223/web-accessibility">Accessibility</a> icon by <a target="_blank"
+          href="https://icons8.com">Icons8</a></span>|
+
+      <span class="attribution_text"><a target="_blank"
+          href="https://icons8.com/icon/3ZVHr47ogpJp/language">Language</a> icon by <a target="_blank"
+          href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank"
+          href="https://icons8.com/icon/ivmdsGweuTzU/sustainable">Sustainable</a> icon by <a target="_blank"
+          href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/JgmYoiWioz8k/knit">Knit</a> icon
+        by <a target="_blank" href="https://icons8.com">Icons8</a></span>|
+      <span class="attribution_text"><a target="_blank" href="https://icons8.com/icon/37691/trekking">Hiking</a> icon
+        by <a target="_blank" href="https://icons8.com">Icons8</a></span>
+
 
     </div>
 
-      </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
