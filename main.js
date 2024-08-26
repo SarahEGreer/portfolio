@@ -70,3 +70,16 @@ setupNav(media);
 media.addEventListener("change", function (e) {
   setupNav(e);
 });
+
+
+var formElement = document.getElementById("form_container");
+var buttonElement = document.getElementById("form_button");
+formElement.addEventListener("botpoison-challenge-start", function () {
+  buttonElement.setAttribute("disabled", "disabled");
+});
+formElement.addEventListener("botpoison-challenge-success", function () {
+  buttonElement.removeAttribute("disabled");
+});
+formElement.addEventListener("botpoison-challenge-error", function () {
+  buttonElement.removeAttribute("disabled");
+});

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@botpoison/browser": "^0.1.30"
+  }
+}

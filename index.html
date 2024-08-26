@@ -12,6 +12,8 @@
     rel="stylesheet" />
   <!-- css style sheet -->
   <link rel="stylesheet" href="styles.css" />
+  <!-- Email form script -->
+  <script src="https://unpkg.com/@botpoison/browser" async></script>
   <title>Portfolio</title>
 </head>
 
@@ -237,6 +239,7 @@
           </div>
         </div>
 
+
         <div class="project_card">
           <div class="project_card-container">
             <img src="images/card3.png" alt="Sceenshot of generator opening screen" class="card_img" />
@@ -278,8 +281,9 @@
           </div>
         </div>
 
-        <div class="form_container">
-          <form action="https://submit-form.com/3m4H1SJZT" method="POST" class="contact-form">
+        <div class="form_container" id="form_container">
+          <form action="https://submit-form.com/3m4H1SJZT" method="POST" class="contact-form"
+            data-botpoison-public-key="pk_5ffec8f9-14da-43f1-b4a4-62385d790ba6">
             <div class="form_name-container">
               <label for="name" class="form_label">Name</label>
               <input type="text" id="name" name="name" class="form_input" />
@@ -298,7 +302,7 @@
               <label for="message" class="form_label">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" class="form_input" required></textarea>
             </div>
-            <input type="submit" class="form_button" />
+            <input type="submit" class="form_button" id="form_button" />
           </form>
         </div>
       </div>
