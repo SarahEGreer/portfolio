@@ -83,3 +83,32 @@ formElement.addEventListener("botpoison-challenge-success", function () {
 formElement.addEventListener("botpoison-challenge-error", function () {
   buttonElement.removeAttribute("disabled");
 });
+
+// Swiper JS
+
+new Swiper('.mini-project-card_wrapper', {
+  // Optional parameters
+  // direction: 'vertical',
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    }
+  }
+});
