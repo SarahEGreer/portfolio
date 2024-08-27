@@ -8,6 +8,9 @@
     --clr-500: #0A2B1A;
     --clr-550: #062012;
     --clr-600: #091D12;
+
+    --swiper-navigation-color: #fff;
+    --swiper-theme-color: #FFFDF9;
 }
 
 
@@ -94,7 +97,7 @@ textarea {
 }
 
 .sub-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -352,8 +355,8 @@ button {
 /* project card */
 
 .project_card {
-    margin: 0 auto 0 auto;
-    max-width: 400px;
+    margin: 0 auto;
+    max-width: 500px;
     background-color: rgba(255, 253, 249, 0.15);
     color: var(--clr-100);
     border-radius: 1em;
@@ -363,7 +366,7 @@ button {
 .project_card-container {
     margin: 0 auto;
     padding: 2.5em 0;
-    width: 80%;
+    width: 85%;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
@@ -399,7 +402,7 @@ button {
 .card_img {
     /* border-radius: 1.3em; */
     grid-area: cimage;
-    width: 95%;
+    width: 100%;
 }
 
 .card_title {
@@ -472,6 +475,16 @@ button {
 
 /* mini projects */
 
+.mini-projects {
+    padding-top: 0;
+    padding-bottom: 3em;
+}
+
+.mini-project_heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
 .mini-project-card_list {
     list-style: none;
     margin: none;
@@ -481,14 +494,10 @@ button {
 
 .mini-project-card_wrapper {
     overflow: hidden;
-    width: 60%;
+    /* width: 60%; */
     /* margin: 0 60px 35px; */
     margin: 0 auto;
 }
-
-/* .mini-project-card_list {
-    overflow: hidden;
-} */
 
 .mini-project-card {
     /* max-width: 400px; */
@@ -496,14 +505,8 @@ button {
     border-radius: 1em;
     padding: 4em 0;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column; */
     width: 60%;
     user-select: none;
-    /* align-content: center;
-    justify-content: center; */
-
-    /* justify-content: center; */
 }
 
 .mini-project-card_container {
@@ -529,6 +532,47 @@ button {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+}
+
+/* .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: pink;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: .1;
+} */
+
+.swiper-wrapper {
+    margin-bottom: 4em;
+}
+
+.mini-project-card:hover {
+    cursor: grabbing;
+    border: 2px solid rgba(255, 253, 249, .5);
+}
+
+
+.mini-project-card_wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: var(--clr-200);
+}
+
+.mini-project-card_wrapper .swiper-pagination-bullet-active {
+    opacity: .9;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: .8;
 }
 
 /* contact */
@@ -801,6 +845,9 @@ footer {
         /* padding: 1em 0; */
     }
 
+    .swiper-pagination {
+        display: block;
+    }
 
 
     .contact_icon-heading-container {
@@ -811,6 +858,7 @@ footer {
     .contact_heading {
         line-height: normal;
     }
+
 
 
 
