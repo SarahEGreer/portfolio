@@ -1,7 +1,7 @@
-# Sarah Greer - Full Stack Developer Portfolio
+# Sarah Greer - Developer Portfolio
 ### Live site: https://sarah-greer-portfolio.netlify.app/
 
-Welcome to my portfolio! I’m Sarah, a full stack software developer passionate about creating efficient, user-friendly applications.
+Welcome to my portfolio! I’m Sarah, a software developer passionate about creating efficient, user-friendly applications.
 
 ## Portfolio Overview
 
